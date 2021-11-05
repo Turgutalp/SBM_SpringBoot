@@ -1,0 +1,9 @@
+CREATE DATABASE `sbm`;
+CREATE TABLE `POLICY` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `policy_type` varchar(100) NOT NULL,
+  `policy_premium` decimal(18,2) NOT NULL,
+  `policy_premium_currency` varchar(10) NOT NULL,
+  `create_date` date,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
